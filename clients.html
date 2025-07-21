@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Select a Client | Kaldarix' Configs</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(145deg, #0f0f0f, #1a1a1a);
+      color: #ffffff;
+      line-height: 1.6;
+    }
+    header {
+      position: sticky;
+      top: 0;
+      background: rgba(20, 20, 20, 0.8);
+      backdrop-filter: blur(10px);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+      z-index: 999;
+    }
+    nav a {
+      color: #ccc;
+      margin-left: 1.5rem;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #fff;
+    }
+    .section {
+      padding: 4rem 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .section h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .clients-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+    .client-card {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 12px;
+      padding: 1.5rem;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+      text-align: center;
+    }
+    .client-card:hover {
+      transform: translateY(-5px);
+    }
+    .client-card a {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.5rem 1.5rem;
+      background: #222;
+      border: 1px solid #555;
+      border-radius: 6px;
+      color: #fff;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+    .client-card a:hover {
+      background: #333;
+      border-color: #888;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      background: #111;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Kaldarix' Configs</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="clients.html">Clients</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#faq">FAQ</a>
+    </nav>
+  </header>
+
+  <section class="section">
+    <h2>Select a Client</h2>
+    <div class="clients-grid">
+      <div class="client-card">
+        <h3>LiquidBounce NextGen</h3>
+        <p>A free & open-source Fabric injection client</p>
+        <p>That uses it's own customized launcher</p>
+        <a href="clients/liquidbounce-configs.html">View Configs</a>
+      </div>
+	  <div class="client-card">
+	    <h3>Meteor Client</h3>
+		<p>Clean visuals, ghost modules, and strong PvP tools.</p>
+		<p>Does not provide a launcher</p>
+	  <a href="clients/meteor-configs.html">View Configs</a>
+	  </div>
+      <!-- Future clients go here -->
+      <!-- <div class="client-card">
+        <h3>Rise Client</h3>
+        <p>Private semi-legit client with top-tier visuals.</p>
+        <a href="#">Coming Soon</a>
+      </div> -->
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Kaldarix' Configs. All rights reserved.
+  </footer>
+</body>
+</html>
