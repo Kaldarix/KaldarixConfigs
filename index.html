@@ -133,6 +133,17 @@
       }
     }
   </style>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.client-card').forEach(card => {
+      card.style.cursor = 'pointer';
+      card.addEventListener('click', () => {
+        const url = card.getAttribute('data-url');
+        if (url) window.location.href = url;
+      });
+    });
+  });
+</script>
 </head>
 <body>
   <header>
@@ -164,17 +175,23 @@
   <section class="section" id="clients">
   <h2>Supported Clients</h2>
   <div class="clients">
-    <div class="client-card">
+    <div class="client-card" data-url="clients/liquidbounce-configs.html">
       <h3>LiquidBounce NextGen</h3>
       <p>A free & open-source Fabric injection client</p>
-      <p>That uses it's own customized launcher</p>
+      <p>That uses its own customized launcher</p>
     </div>
-	  <div class="client-card">
-	    <h3>Meteor Client</h3>
-		<p>A cheat with clean visuals, ghost features, and solid PvP tools</p>
-		<p>Does not provide a own launcher</p>
+    <div class="client-card" data-url="clients/meteor-configs.html">
+      <h3>Meteor Client</h3>
+      <p>A cheat with clean visuals, ghost features, and solid PvP tools</p>
+      <p>Does not provide its own launcher</p>
+    </div>
+	<div class="client-card" data-url="WIP.html">
+	  <h3>Wurst Client</h3>
+	  <p>Very Basic Client With plenty of good options.</p>
+	  <p>when configured right, undetectable.</p>
 	  </div>
   </div>
+
   <div style="text-align: center; margin-top: 2rem;">
     <a href="clients.html" 
        style="display: inline-block; padding: 0.75rem 2rem; background: #222; border: 1px solid #555; border-radius: 8px; color: #fff; text-decoration: none; transition: all 0.3s ease;">
