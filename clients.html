@@ -87,6 +87,17 @@
       color: #666;
     }
   </style>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelectorAll('.client-card').forEach(card => {
+      card.style.cursor = 'pointer';
+      card.addEventListener('click', () => {
+        const url = card.getAttribute('url');
+        if (url) window.location.href = url;
+      });
+    });
+  });
+</script>
 </head>
 <body>
   <header>
@@ -102,27 +113,23 @@
   <section class="section">
     <h2>Select a Client</h2>
     <div class="clients-grid">
-      <div class="client-card">
-        <h3>LiquidBounce NextGen</h3>
-        <p>A free & open-source Fabric injection client</p>
-        <p>That uses it's own customized launcher</p>
-        <a href="clients/liquidbounce-configs.html">View Configs</a>
-      </div>
-	  <div class="client-card">
-	    <h3>Meteor Client</h3>
-		<p>Clean visuals, ghost modules, and strong PvP tools.</p>
-		<p>Does not provide a launcher</p>
-	  <a href="clients/meteor-configs.html">View Configs</a>
-	  </div>
-	  <div class="client-card">
-	    <h3>Wurst Client</h3>
-	    <p>Very Basic Client With plenty of good options.</p>
-		<p>when configured right, undetectable.</p>
-	  <a href clients/wurst-configs.html">View Configs</a>
-	  </div>
+    <div class="client-card" url="clients/liquidbounce-configs.html">
+      <h3>LiquidBounce NextGen</h3>
+      <p>A free & open-source Fabric injection client</p>
+      <p>That uses its own customized launcher</p>
     </div>
+    <div class="client-card" url="clients/meteor-configs.html">
+      <h3>Meteor Client</h3>
+      <p>A cheat with clean visuals, ghost features, and solid PvP tools</p>
+      <p>Does not provide its own launcher</p>
+    </div>
+	<div class="client-card" url="clients/wurst-configs.html">
+	  <h3>Wurst Client</h3>
+	  <p>Very Basic Client With plenty of good options.</p>
+	  <p>when configured right, undetectable.</p>
+	  </div>
+  </div>
   </section>
-
   <footer>
     &copy; 2025 Kaldarix' Configs. All rights reserved.
   </footer>
