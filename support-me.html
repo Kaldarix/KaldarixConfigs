@@ -1,0 +1,163 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Support Me | Kaldarix' Configs</title>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+	<style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(145deg, #0f0f0f, #1a1a1a);
+      color: #ffffff;
+      line-height: 1.6;
+    }
+    header {
+      position: sticky;
+      top: 0;
+      background: rgba(20, 20, 20, 0.8);
+      backdrop-filter: blur(10px);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+      z-index: 999;
+    }
+    nav a {
+      color: #ccc;
+      margin-left: 1.5rem;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+	    color: #fff;
+    }
+    .hero {
+	    position: relative;
+	    width: 100%;
+	    height: 100vh;
+	    overflow: hidden;
+	  }
+	  .bg-video {
+	    position: absolute;
+	    top: 0; left: 0;
+	    width: 100%;
+	    height: 100%;
+	    object-fit: cover;
+	    z-index: 1;
+	  }
+	  .hero-content {
+	    position: relative;
+	    z-index: 2;
+	    color: white;
+	    text-align: center;
+	    top: 50%;
+	    transform: translateY(-50%);
+	    width: 100%;
+	    padding: 0 20px;
+	  }
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+      color: #aaa;
+    }
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .buttons a {
+      padding: 0.75rem 2rem;
+      background: #222;
+      border: 1px solid #555;
+      border-radius: 8px;
+      color: #fff;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+    .buttons a:hover {
+      background: #333;
+      border-color: #888;
+    }
+    .section {
+      padding: 4rem 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .section h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .clients {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem;
+    }
+    .client-card {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 12px;
+      padding: 1.5rem;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+    .client-card:hover {
+      transform: translateY(-5px);
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      background: #111;
+      color: #666;
+    }
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+      .hero p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Kaldarix' Configs</div>
+    <nav>
+      <a href="index.html#home">Home</a>
+      <a href="clients.html">Clients</a>
+      <a href="index.html#about">About</a>
+      <a href="index.html#faq">FAQ</a>
+    </nav>
+  </header>
+  <section class="hero">
+    <video autoplay muted loop class="bg-video">
+      <source src="background.mp4" type="video/mp4">
+    </video>
+    <div class="hero-content">
+      <h1>❤ Thanks for Downloading! ❤</h1>
+      <p>Hope you enjoy using this config, but you might like</p>
+      <div class="buttons">
+        <a href="clients.html">More Configs</a>
+        <a href="https://github.com/kaldarix" target="_blank">My GitHub</a>
+        <a href="https://www.curseforge.com/members/k1studios/projects" target="_blank">CurseForge Projects</a>
+      </div>
+    </div>
+  </section>
+  <footer>
+    &copy; | 2025 Kaldarix' Configs. All rights reserved. |
+  </footer>
+</body>
+</html>
